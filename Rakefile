@@ -11,7 +11,12 @@ begin
     gem.homepage = "http://github.com/apolzin/pixelsandwich"
     gem.authors = ["Alexander Polzin"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+   	gem.add_runtime_dependency "dictionary", ">=0"
+		gem.add_runtime_dependency "rmagick", ">=0"
+		gem.add_runtime_dependency "gd2", ">=0"
+		gem.add_runtime_dependency "fileutils", ">=0"
+		gem.add_runtime_dependency "digest", ">=0"
+		# gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
