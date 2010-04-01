@@ -6,7 +6,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "pixelsandwich"
     gem.summary = %Q{Pixelsandwich, an Image Composition Library}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.description = %Q{an image compositing / graphical headline rendering library based on gd2 and rmagick}
     gem.email = "alexander@girls.io"
     gem.homepage = "http://github.com/apolzin/pixelsandwich"
     gem.authors = ["Alexander Polzin"]
