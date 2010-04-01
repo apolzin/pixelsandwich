@@ -1,6 +1,6 @@
 = pixelsandwich
 
-Description goes here.
+An image composition / graphical headline rendering library based on imagemagick and gd
 
 == Note on Patches/Pull Requests
  
