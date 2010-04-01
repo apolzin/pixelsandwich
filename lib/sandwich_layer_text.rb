@@ -203,9 +203,4 @@ class SandwichLayerText < SandwichLayer
 		box = @gd_font.bounding_rectangle str
 		box[:upper_right].first - box[:upper_left].first
 	end
-
 end
-
-#foo = SandwichLayerText.new({:words => "lslsldd sohdfo sdofho sdiofh\nlalaladupdupdup bwwwwt", :float_width => 40, :gradient => ["ffffff","000000"]})
-#foo.render
-#puts foo.inspect

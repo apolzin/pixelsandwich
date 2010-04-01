@@ -31,7 +31,3 @@ class SandwichLayerImage < SandwichLayer
 	end
 
 end
-
-foo = SandwichLayerImage.new({:source_image => './bikeporn.jpg'})
-foo.render
-
