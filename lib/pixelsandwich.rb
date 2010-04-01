@@ -1,4 +1,4 @@
-require 'lib/sandwich_layer.rb'
+require 'sandwich_layer.rb'
 require 'dictionary'
 
 class PixelSandwich
