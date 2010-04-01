@@ -4,8 +4,8 @@ class SandwichLayer
 	require 'gd2'
 	require 'fileutils'
 	require 'digest'
-	require 'lib/sandwich_layer_text'
-	require 'lib/sandwich_layer_image'
+	require 'sandwich_layer_text'
+	require 'sandwich_layer_image'
 
 	attr_accessor :opacity, :position
 	LAYERDEFAULTS = {
