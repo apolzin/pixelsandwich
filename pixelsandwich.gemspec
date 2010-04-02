@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{pixelsandwich}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Alexander Polzin"]
-  s.date = %q{2010-04-02}
+  s.date = %q{2010-04-03}
   s.description = %q{an image compositing / graphical headline rendering library based on gd2 and rmagick}
   s.email = %q{alexander@girls.io}
   s.extra_rdoc_files = [
@@ -26,11 +26,13 @@ Gem::Specification.new do |s|
      "examples/black.jpg",
      "examples/example.rb",
      "examples/logo.png",
+     "examples/whatever.jpg",
      "fonts/Vera.ttf",
      "lib/pixelsandwich.rb",
      "lib/sandwich_layer.rb",
      "lib/sandwich_layer_image.rb",
      "lib/sandwich_layer_text.rb",
+     "pixelsandwich.gemspec",
      "test/helper.rb",
      "test/test_pixelsandwich.rb"
   ]
