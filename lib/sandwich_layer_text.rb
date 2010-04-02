@@ -99,8 +99,7 @@ class SandwichLayerText < SandwichLayer
 				dd.text line
 				slice.transparent = transparent
 				slice.export @file_name.gsub(/\.png/,"_normal_#{count}.png")
-				magick_slice = Magick::ImageList.new(@file_name.gsub(/\.png/,"_normal_#{count}.png")){
-					self.depth = 32 }.pop
+				magick_slice = Magick::ImageList.new(@file_name.gsub(/\.png/,"_normal_#{count}.png")).pop
 				magick_slice.resize! 0.20
 				magick_slice.sharpen 1, 0.5
 				width = magick_slice.columns
@@ -119,7 +118,7 @@ class SandwichLayerText < SandwichLayer
 		end
 		main_image = Magick::Image.new(@box_width / 5, @box_height / 5) { self.background_color = "transparent" }
 		magick_slices.each_with_index do |slice, index|
-			slice_image = Magick::ImageList.new(slice){ self.depth = 32 }.pop
+			slice_image = Magick::ImageList.new(slice).pop
 			main_image.composite!(slice_image, 0, index * slice_image.rows, Magick::OverCompositeOp)
 			FileUtils.rm slice
 		end

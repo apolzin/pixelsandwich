@@ -1,4 +1,5 @@
-require '../pixelsandwich'
+require 'rubygems'
+require 'pixelsandwich'
 
 foo = PixelSandwich.new
 foo.add_layer(:bike, :image, {:source_image => './black.jpg'})

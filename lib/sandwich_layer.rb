@@ -1,6 +1,6 @@
 class SandwichLayer
 	require 'rubygems'
-	require 'rmagick'
+	require 'RMagick'
 	require 'gd2'
 	require 'fileutils'
 	require 'digest'
