@@ -84,7 +84,7 @@ class SandwichLayerText < SandwichLayer
 				transparent = @gd_image.palette.resolve Color[BLACK[0], BLACK[1], BLACK[2], 1.0]
 				dd.color = transparent
 				dd.fill
-				hor = @box_height / @words_array.nitems - ((@size * 1.4 - @size) * 5)
+				hor = @box_height / @words_array.count - ((@size * 1.4 - @size) * 5)
 				case @alignment
 					when 'left'
 						dd.move_to 0, hor
@@ -153,10 +153,10 @@ class SandwichLayerText < SandwichLayer
 		final_width = final_box[:upper_right][0] - final_box[:upper_left][0]
 		final_height = final_box[:lower_right][1] - final_box[:upper_right][1]
 		@box_width = final_width
-		@box_height = (@size * 1.4).to_i * 5 * string_array.nitems
+		@box_height = (@size * 1.4).to_i * 5 * string_array.count
 		return {
 							:width => final_width,
-							:height => (@size * 1.4).to_i * 5 * string_array.nitems
+							:height => (@size * 1.4).to_i * 5 * string_array.count
 		}
 	end
 
@@ -168,7 +168,7 @@ class SandwichLayerText < SandwichLayer
 
 	def create_slice
 		dim = dimensions
-		Image::TrueColor.new(dim[:width], dim[:height] / @words_array.nitems)
+		Image::TrueColor.new(dim[:width], dim[:height] / @words_array.count)
 	end
 
 	def float(str, font, cut = 0)

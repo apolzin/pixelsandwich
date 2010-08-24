@@ -2,6 +2,13 @@
 
 An image composition / graphical headline rendering library based on imagemagick and gd
 
+= Note on GD2
+
+you can now use either the normal gd2 library (gem install gd2) if you are on ruby 1.8 and on a 32 bit system
+
+or you can use gd2-ffij (git clone git://github.com/apolzin/gd2-ffij.git) if you are on ruby 1.9.x and/or on a 64 bit system
+
+
 == Note on Patches/Pull Requests
  
 * Fork the project.

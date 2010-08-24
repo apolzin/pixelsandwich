@@ -13,7 +13,6 @@ begin
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
    	gem.add_runtime_dependency "dictionary", ">=0"
 		gem.add_runtime_dependency "rmagick", ">=0"
-		gem.add_runtime_dependency "gd2", ">=0"
 		# gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
