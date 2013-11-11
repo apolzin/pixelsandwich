@@ -1,7 +1,7 @@
 class SandwichLayer
 	require 'rubygems'
 	require 'RMagick'
-	require 'gd2'
+	require 'gd2-ffij'
 	require 'fileutils'
 	require 'digest'
 	require 'sandwich_layer_text'
